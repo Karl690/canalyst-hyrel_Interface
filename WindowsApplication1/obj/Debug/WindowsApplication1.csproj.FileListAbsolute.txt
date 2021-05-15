@@ -1,0 +1,8 @@
+G:\Users\ttc\Desktop\C#_Example(VS2005)\WindowsApplication1\bin\Debug\USBCAN_Demo.exe
+G:\Users\ttc\Desktop\C#_Example(VS2005)\WindowsApplication1\bin\Debug\USBCAN_Demo.pdb
+G:\Users\ttc\Desktop\C#_Example(VS2005)\WindowsApplication1\obj\Debug\ResolveAssemblyReference.cache
+G:\Users\ttc\Desktop\C#_Example(VS2005)\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+G:\Users\ttc\Desktop\C#_Example(VS2005)\WindowsApplication1\obj\Debug\WindowsApplication1.Properties.Resources.resources
+G:\Users\ttc\Desktop\C#_Example(VS2005)\WindowsApplication1\obj\Debug\WindowsApplication1.csproj.GenerateResource.Cache
+G:\Users\ttc\Desktop\C#_Example(VS2005)\WindowsApplication1\obj\Debug\USBCAN_Demo.exe
+G:\Users\ttc\Desktop\C#_Example(VS2005)\WindowsApplication1\obj\Debug\USBCAN_Demo.pdb
