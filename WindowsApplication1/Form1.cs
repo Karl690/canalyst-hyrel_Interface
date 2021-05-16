@@ -254,6 +254,7 @@ namespace WindowsApplication1
 
                 str = "Data received: ";
                 str += "  Frame ID:0x" + System.Convert.ToString(m_recobj[i].ID, 16);
+                uint canAddress = m_recobj[i].ID & (uint)0x00FF0000;
                 str += "  Frame format:";
                 if (m_recobj[i].RemoteFlag == 0)
                     str += "Data frame ";
@@ -273,22 +274,23 @@ namespace WindowsApplication1
                     fixed (VCI_CAN_OBJ* m_recobj1 = &m_recobj[i])
                     {
                         if (j++ < len)
-                            str += " " + System.Convert.ToString(m_recobj1->Data[0], 16);
+                            str += String.Format(" {0:x2}", (int)m_recobj1->Data[0]); 
                         if (j++ < len)
-                            str += " " + System.Convert.ToString(m_recobj1->Data[1], 16);
+                            str += String.Format(" {0:x2}", (int)m_recobj1->Data[1]);
                         if (j++ < len)
-                            str += " " + System.Convert.ToString(m_recobj1->Data[2], 16);
+                            str += String.Format(" {0:x2}", (int)m_recobj1->Data[2]);
                         if (j++ < len)
-                            str += " " + System.Convert.ToString(m_recobj1->Data[3], 16);
+                            str += String.Format(" {0:x2}", (int)m_recobj1->Data[3]);
                         if (j++ < len)
-                            str += " " + System.Convert.ToString(m_recobj1->Data[4], 16);
+                            str += String.Format(" {0:x2}", (int)m_recobj1->Data[4]);
                         if (j++ < len)
-                            str += " " + System.Convert.ToString(m_recobj1->Data[5], 16);
+                            str += String.Format(" {0:x2}", (int)m_recobj1->Data[5]);
                         if (j++ < len)
-                            str += " " + System.Convert.ToString(m_recobj1->Data[6], 16);
+                            str += String.Format(" {0:x2}", (int)m_recobj1->Data[6]);
                         if (j++ < len)
-                            str += " " + System.Convert.ToString(m_recobj1->Data[7], 16);
+                            str += String.Format(" {0:x2}", (int)m_recobj1->Data[7]);
                     }
+                    str += String.Format(" {0:x1}", canAddress);
                 }
 
                 listBox_Info.Items.Add(str);

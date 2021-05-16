@@ -166,6 +166,7 @@
             this.comboBox_Mode.Name = "comboBox_Mode";
             this.comboBox_Mode.Size = new System.Drawing.Size(166, 21);
             this.comboBox_Mode.TabIndex = 1;
+            this.comboBox_Mode.SelectedIndex = 0;
             // 
             // comboBox_Filter
             // 
@@ -432,7 +433,9 @@
             // listBox_Info
             // 
             this.listBox_Info.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox_Info.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox_Info.FormattingEnabled = true;
+            this.listBox_Info.ItemHeight = 22;
             this.listBox_Info.Location = new System.Drawing.Point(3, 16);
             this.listBox_Info.Name = "listBox_Info";
             this.listBox_Info.Size = new System.Drawing.Size(696, 204);
